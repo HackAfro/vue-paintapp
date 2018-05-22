@@ -1,5 +1,5 @@
-# React-Paintapp
-Realtime paint collaboration using Pusher and React
+# Vue-Paintapp
+Realtime paint collaboration using Pusher and Vue
 
 ## Prerequisites
 - [Vue](https://vuejs.org/)
