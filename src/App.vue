@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="main">
+      <div class="color-guide">
+        <h5>Color Guide</h5>
+        <div class="user user">User</div>
+        <div class="user guest">Guest</div>
+      </div>
+      <canvas v-canvas></canvas>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import canvas from './canvas.directive.js';
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  directives: {
+    canvas,
+  },
+};
 </script>
 
 <style>
@@ -24,5 +30,35 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+canvas {
+  background: navy;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.color-guide {
+  margin: 20px 40px;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+.user {
+  padding: 7px 15px;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  background: red;
+  margin: 10px 0;
+}
+
+.guest {
+  background: greenyellow;
+  color: black;
 }
 </style>
