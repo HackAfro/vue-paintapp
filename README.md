@@ -1,6 +1,8 @@
 # Vue-Paintapp
 Realtime paint collaboration using Pusher and Vue
 
+[View tutorial](https://pusher.com/tutorials/collaborative-painting-vuejs)
+
 ## Prerequisites
 - [Vue](https://vuejs.org/)
 - [Express](https://expressjs.com/)
